@@ -1,0 +1,17 @@
+@import "../global.css";
+
+.btn.primary {
+  @apply rounded-full border-none shadow-none pl-9 pr-9 text-lg;
+  background-color: var(--green-primary);
+  color: var(--white-primary);
+  font-family: "Nunito";
+  height: 60px;
+}
+
+.btn.secondary {
+  @apply rounded-full border-none shadow-none  pl-9 pr-9 text-lg;
+  background-color: var(--white-primary);
+  color: var(--green-primary);
+  font-family: "Nunito";
+  height: 60px;
+}
