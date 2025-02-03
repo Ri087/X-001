@@ -1,0 +1,10 @@
+---
+import '../../styles/components/btn.css'
+
+const { text } = Astro.props
+---
+
+<button class="btn secondary">
+  {text}
+  <slot />
+</button>
