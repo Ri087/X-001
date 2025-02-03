@@ -1,34 +1,59 @@
 ---
-import Menu from '../components/Menu.astro';
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
-import "../styles/landing.css";
-import "../styles/components/btn.css"
+import Menu from '../components/Menu.astro'
+import Layout from '../layouts/Layout.astro'
+import '../styles/global.css'
+import '../styles/landing.css'
+import '../styles/components/btn.css'
+import PrimaryButton from '../components/utils/PrimaryButton.astro'
+import SecondaryButton from '../components/utils/SecondaryButton.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-<div class="w-full h-screen landing-bg bg-cover bg-center">
-	<Menu />
-	<div class=" flex w-full h-full justify-start items-center">
-		<div class="flex flex-col w-4/5 h-2/3 mt-16 ml-16  justify-center">
-			<p class="title leading-20">Optimisez la performance énergétique de votre patrimoine</p>
-			<p class="sub-title h-28 flex items-center">Notre expertise est à votre service pour vous accompagner dans, la réduction de vos coûts énergétiques, l'amélioration de votre empreinte et la valorisation de votre patrimoine</p>
-			<div class="flex  h-28 items-center">
-				<button class="btn primary">
-					À propos
-					<svg xmlns="http://www.w3.org/2000/svg"  width="38" height="38" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>				  </button>
-				  <button class="btn secondary ml-5">
-					Nos prestations
-					<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24"><path fill="currentColor" d="M17.616 18.885h.769v-2.5h2.5v-.77h-2.5v-2.5h-.77v2.5h-2.5v.77h2.5zM18 20q-1.671 0-2.835-1.164Q14 17.67 14 16t1.165-2.835T18 12t2.836 1.165T22 16t-1.164 2.836T18 20M5 18V7.5l7-5.288L19 7.5v1.82q-.244-.055-.492-.072T18 9.231V8l-6-4.538L6 8v9h5.306q.032.263.095.513t.159.487zm7-7.77"/></svg>				  </button>
-			</div>
-		
-		</div>
-	</div>
-	
+  <div class="w-full h-screen landing-bg bg-cover bg-center">
+    <Menu />
+    <!-- <div class="flex w-full h-full justify-start items-center">
+      <div
+        class="flex flex-col sm:w-4/5 xl:w-full h-2/3 mt-16 ml-16 justify-center"
+      >
+        <p class="title leading-20">
+          Optimisez la performance énergétique de votre patrimoine
+        </p>
+        <p class="sub-title h-28 flex items-center">
+          Notre expertise est à votre service pour vous accompagner dans, la
+          réduction de vos coûts énergétiques, l'amélioration de votre empreinte
+          et la valorisation de votre patrimoine
+        </p>
+        <div class="flex h-28 items-center gap-8">
+          <PrimaryButton text="À propos">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"
+              ></path></svg
+            >
+          </PrimaryButton>
 
-</div>
+          <SecondaryButton text="Nos prestations">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                d="M17.616 18.885h.769v-2.5h2.5v-.77h-2.5v-2.5h-.77v2.5h-2.5v.77h2.5zM18 20q-1.671 0-2.835-1.164Q14 17.67 14 16t1.165-2.835T18 12t2.836 1.165T22 16t-1.164 2.836T18 20M5 18V7.5l7-5.288L19 7.5v1.82q-.244-.055-.492-.072T18 9.231V8l-6-4.538L6 8v9h5.306q.032.263.095.513t.159.487zm7-7.77"
+              ></path></svg
+            >
+          </SecondaryButton>
+        </div>
+      </div>
+    </div> -->
+  </div>
 </Layout>
