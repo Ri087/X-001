@@ -1,0 +1,29 @@
+.landing-bg {
+  background: url("../assets/images/background.png");
+  background-size: cover; /* L'image prend tout l'espace et garde ses proportions */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  width: 100vw; /* Prend toute la largeur de l'écran */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0;
+}
+/* w-233px h-70px */
+.logo {
+  width: 155px; /* 233px / 1.5 */
+  height: 46px; /* 70px / 1.5 */
+}
+
+.title {
+  font-family: "Nunito-ExtraBold";
+  color: #fff;
+  font-size: 72px;
+  @apply w-3/4;
+}
+
+.sub-title {
+  font-family: "Nunito";
+  color: #ffffff95;
+  font-size: 18px;
+  @apply w-3/4;
+}

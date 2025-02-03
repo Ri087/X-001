@@ -10,10 +10,15 @@
   font-style: normal;
 }
 
-* {
-  font-family: "Nunito";
+@font-face {
+  font-family: "Nunito-ExtraBold";
+  src: url("/fonts/Nunito-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
 }
 
-.btn {
-  @apply rounded-full bg-green-500 text-white;
+:root {
+  --green-primary: #30a777;
+  --green-secondary: #217553;
+  --white-primary: #ffffff;
 }
