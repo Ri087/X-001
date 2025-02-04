@@ -1,10 +1,12 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{astro,html,js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: {
-        'green-primary': 'var(--green-primary)',
-        'green-secondary': 'var(--green-secondary)',
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
       },
     },
   },
+  plugins: [require('daisyui')],
 }
