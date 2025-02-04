@@ -1,7 +1,10 @@
 ---
-import SwapButtonMenu from '../components/utils/SwapButtonMenu.astro'
+import SwapButtonMenu from '../components/menu/SwapButtonMenu.astro'
+import DesktopMenu from './menu/DesktopMenu.astro'
+import MobileMenu from './menu/MobileMenu.astro'
 ---
 
+<!-- Desktop menu -->
 <div
   class="bg-white w-full h-24 flex justify-center items-center absolute top-0"
 >
@@ -16,68 +19,15 @@ import SwapButtonMenu from '../components/utils/SwapButtonMenu.astro'
       </a>
     </div>
     <div class="hidden md:flex">
-      <ul class="flex w-xl justify-evenly">
-        <li>
-          <a href="#" class="text-black regular-text hover:underline">Accueil</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-black regular-text hover:underline"
-            >À propos</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-black regular-text hover:underline"
-            >Nos prestation</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-black regular-text hover:underline"
-            >Nous contacter</a
-          >
-        </li>
-      </ul>
+      <DesktopMenu />
     </div>
-    <div>
+    <div class="md:hidden">
       <SwapButtonMenu />
     </div>
   </div>
-
-  <!-- </div> -->
 </div>
-<div class="bg-white w-full h-full hidden" id="burger-menu">
-  <div class="flex flex-col items-center justify-center h-full">
-    <ul class="flex flex-col w-1/2 items-start justify-center gap-16">
-      <li>
-        <a
-          href="#"
-          class="text-black regular-text text-2xl font-medium text-green-primary hover:underline"
-          >Accueil</a
-        >
-      </li>
-      <li>
-        <a
-          href="#"
-          class="text-black regular-text text-2xl font-medium text-green-primary hover:underline"
-          >À propos</a
-        >
-      </li>
-      <li>
-        <a
-          href="#"
-          class="text-black regular-text text-2xl font-medium text-green-primary hover:underline"
-          >Nos prestation</a
-        >
-      </li>
-      <li>
-        <a
-          href="#"
-          class="text-black regular-text text-2xl font-medium text-green-primary hover:underline"
-          >Nous contacter</a
-        >
-      </li>
-    </ul>
-  </div>
 
-  <style></style>
+<!-- Mobile menu -->
+<div class="bg-white w-full h-full hidden transition-all" id="burger-menu">
+  <MobileMenu />
 </div>
