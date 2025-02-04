@@ -1,11 +1,10 @@
 <label class="swap swap-rotate">
   <!-- this hidden checkbox controls the state -->
-  <input type="checkbox" />
+  <input type="checkbox" id="swap-menu" />
 
   <!-- sun icon -->
   <svg
-    id="open-swap"
-    class="swap-off fill-current x"
+    class="swap-off fill-current text-green-primary"
     xmlns="http://www.w3.org/2000/svg"
     width="32"
     height="32"
@@ -18,8 +17,7 @@
 
   <!-- moon icon -->
   <svg
-    id="close-swap"
-    class="swap-on fill-current x"
+    class="swap-on fill-current text-green-primary"
     xmlns="http://www.w3.org/2000/svg"
     width="32"
     height="32"
@@ -32,23 +30,21 @@
 </label>
 
 <script>
-  const swapOpenMenu = document.getElementById('open-swap') as Element
-  swapOpenMenu?.addEventListener('click', () => {
-    toggleMenu()
-  })
-
-  const swapClosenMenu = document.getElementById('close-swap') as Element
-  swapClosenMenu?.addEventListener('click', () => {
+  let isOpen = false
+  const toggleButtonMenu = document.getElementById('swap-menu') as Element
+  toggleButtonMenu?.addEventListener('click', () => {
     toggleMenu()
   })
 
   const toggleMenu = () => {
-    // const menu = document.querySelector('.burger-menu') as Element
-    // if (menu.classList.contains('hidden')) {
-    //   menu.classList.remove('hidden')
-    // } else {
-    //   menu.classList.add('hidden')
-    // }
-    console.log('clicked')
+    console.log('clicked :', isOpen)
+    isOpen = !isOpen
+    if (isOpen) {
+      document.getElementById('burger-menu')?.classList.add('swap-active')
+      document.getElementById('burger-menu')?.classList.remove('hidden')
+    } else {
+      document.getElementById('burger-menu')?.classList.add('hidden')
+      document.getElementById('burger-menu')?.classList.remove('swap-active')
+    }
   }
 </script>
