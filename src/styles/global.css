@@ -22,3 +22,15 @@
   --green-secondary: #217553;
   --white-primary: #ffffff;
 }
+
+.text-green-primary {
+  color: var(--green-primary);
+}
+
+.text-green-secondary {
+  color: var(--green-secondary);
+}
+
+.text-white-primary {
+  color: var(--white-primary);
+}
