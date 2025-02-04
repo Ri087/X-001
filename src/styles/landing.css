@@ -15,28 +15,3 @@
   height: 46px;
   width: 155px;
 }
-
-.title {
-  font-family: 'Nunito-ExtraBold';
-  color: #fff;
-  font-size: 72px;
-  padding: 10px;
-  @apply w-3/4;
-  @media (width <= 48rem) {
-    font-size: 40px;
-    line-height: 45px;
-    @apply w-4/5;
-  }
-}
-
-.sub-title {
-  font-family: 'Nunito';
-  color: #ffffff95;
-  font-size: 22px;
-  padding: 10px;
-  @apply w-3/4;
-  @media (width <= 48rem) {
-    font-size: 14px;
-    @apply w-4/5;
-  }
-}

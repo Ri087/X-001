@@ -4,7 +4,6 @@
   @apply rounded-full border-none shadow-none pl-9 pr-9 text-lg;
   background-color: var(--green-primary);
   color: var(--white-primary);
-  font-family: 'Nunito';
   height: 60px;
   @media (width <= 48rem) {
     @apply text-sm pl-4 pr-4;
@@ -16,7 +15,6 @@
   @apply rounded-full border-none shadow-none  pl-9 pr-9 text-lg;
   background-color: var(--white-primary);
   color: var(--green-primary);
-  font-family: 'Nunito';
   height: 60px;
   @media (width <= 48rem) {
     @apply text-sm pl-4 pr-4;
