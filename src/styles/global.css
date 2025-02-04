@@ -42,6 +42,26 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.light-text {
+  font-weight: 300;
+}
+
+.regular-text {
+  font-weight: 400;
+}
+
+.medium-text {
+  font-weight: 500;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.extra-bold-text {
+  font-weight: 800;
+}
+
 :root {
   --green-primary: #30a777;
   --green-secondary: #217553;
