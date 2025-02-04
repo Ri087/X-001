@@ -1,5 +1,5 @@
 ---
-
+import SwapButtonMenu from '../components/utils/SwapButtonMenu.astro'
 ---
 
 <div
@@ -38,31 +38,12 @@
         </li>
       </ul>
     </div>
-    <div class="md:hidden flex dropdown dropdown-bottom dropdown-end">
-      <a href="#">
-        <svg
-          width="43"
-          height="43"
-          viewBox="0 0 43 43"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8.0625 25.7732V23.9815H34.9375V25.7732H8.0625ZM8.0625 32.526V30.7343H34.9375V32.526H8.0625ZM8.0625 19.0204V17.2287H34.9375V19.0204H8.0625ZM8.0625 12.2658V10.4741H34.9375V12.2658H8.0625Z"
-            fill="#30A777"></path>
-        </svg>
-        <ul
-          tabindex="0"
-          class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
-        >
-          <li><a>Accueil</a></li>
-          <li><a>À propos</a></li>
-          <li><a>Nous prestations</a></li>
-          <li><a>Nous contacter</a></li>
-        </ul>
-      </a>
+    <div>
+      <SwapButtonMenu />
     </div>
-
-    <style></style>
   </div>
+
+  <!-- </div> -->
 </div>
+
+<style></style>
