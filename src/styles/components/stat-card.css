@@ -1,0 +1,14 @@
+.green-gradient {
+  color: linear-gradient(90deg, var(--green-primary), var(--green-secondary));
+}
+
+.green-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--green-secondary),
+    var(--green-primary)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

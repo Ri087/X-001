@@ -1,11 +1,12 @@
 ---
-import Menu from '../components/Menu.astro'
+import Menu from '../components/menu/Menu.astro'
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
 import '../styles/landing.css'
 import '../styles/components/btn.css'
 import '../components/landing/HomeLanding.astro'
 import HomeLanding from '../components/landing/HomeLanding.astro'
+import StatLanding from '../components/landing/StatLanding.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -16,7 +17,7 @@ import HomeLanding from '../components/landing/HomeLanding.astro'
     <Menu />
     <!-- Page 1 -->
     <HomeLanding />
+    <StatLanding />
   </div>
   <!-- Page 2 -->
-  <!-- <div class="w-full h-screen flex items-center justify-center">Hello</div> -->
 </Layout>
