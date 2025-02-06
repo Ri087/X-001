@@ -23,7 +23,6 @@
   font-style: normal;
 }
 
-/* Ajoute les autres variantes */
 @font-face {
   font-family: 'Nunito';
   src: url('/fonts/Nunito-Light.ttf') format('truetype');
@@ -64,18 +63,75 @@ body {
 
 :root {
   --green-primary: #30a777;
+  --green-primary-dark: #2a946a;
   --green-secondary: #217553;
   --white-primary: #ffffff;
+  --white-primary-dark: #f2f2f2;
+  --white-primary-light-transparent: rgba(255, 255, 255, 0.75);
+  --dark-primary: #1a1a1a;
+  --dark-secondary: #333333;
 }
+@layer utilities {
+  .text-green-primary {
+    color: var(--green-primary);
+  }
 
-.text-green-primary {
-  color: var(--green-primary);
-}
+  .text-green-primary-dark {
+    color: var(--green-primary-dark);
+  }
 
-.text-green-secondary {
-  color: var(--green-secondary);
-}
+  .text-green-secondary {
+    color: var(--green-secondary);
+  }
 
-.text-white-primary {
-  color: var(--white-primary);
+  .text-white-primary {
+    color: var(--white-primary);
+  }
+
+  .text-white-primary-dark {
+    color: var(--white-primary-dark);
+  }
+
+  .text-white-primary-transparent {
+    color: var(--white-primary-light-transparent);
+  }
+
+  .text-dark-primary {
+    color: var(--dark-primary);
+  }
+  .text-dark-secondary {
+    color: var(--dark-secondary);
+  }
+
+  .bg-green-primary {
+    background-color: var(--green-primary);
+  }
+
+  .bg-green-primary-dark {
+    background-color: var(--green-primary-dark);
+  }
+
+  .bg-green-secondary {
+    background-color: var(--green-secondary);
+  }
+
+  .bg-white-primary {
+    background-color: var(--white-primary);
+  }
+
+  .bg-white-primary-dark {
+    background-color: var(--white-primary-dark);
+  }
+
+  .bg-dark-primary {
+    background-color: var(--dark-primary);
+  }
+
+  .bg-dark-secondary {
+    background-color: var(--dark-secondary);
+  }
+
+  .nunito-light {
+    font-family: 'Nunito-Light', sans-serif;
+  }
 }

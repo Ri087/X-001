@@ -1,0 +1,35 @@
+---
+import RightArrow from '../svg/RightArrow.astro'
+import MoreHouse from '../svg/MoreHouse.astro'
+import CustomBtn from '../../components/utils/CustomButton.astro'
+---
+
+<div
+  class="w-full h-screen flex items-center justify-center pl-4.5 pr-4.5 md:pl-14 lg:pl-28"
+>
+  <div class="h-full w-full flex flex-col pt-40 md:justify-center md:pt-0">
+    <p
+      class="text-4xl text-white-primary font-extrabold max-w-lg md:text-5xl md:max-w-2xl md:leading-16 lg:text-8xl lg:max-w-7xl lg:leading-[110px]"
+    >
+      Optimisez la performance énergétique de votre patrimoine
+    </p>
+    <p
+      class="text-sm text-white-primary-transparent mt-4 max-w-lg md:mt-8 md:text-lg md:max-w-2xl lg:text-2xl lg:max-w-6xl"
+    >
+      Notre expertise est à votre service pour vous accompagner dans, la
+      réduction de vos coûts énergétiques, l'amélioration de votre empreinte et
+      la valorisation de votre patrimoine
+    </p>
+    <div
+      class="flex flex-col w-48 mt-4 gap-4 md:flex-row md:w-3/4 md:mt-16 lg:mt-8"
+    >
+      <CustomBtn text="À propos" className="primary">
+        <RightArrow />
+      </CustomBtn>
+
+      <CustomBtn text="Nos prestations" className="secondary">
+        <MoreHouse />
+      </CustomBtn>
+    </div>
+  </div>
+</div>

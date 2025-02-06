@@ -1,23 +1,19 @@
 @import '../global.css';
 
 .btn.primary {
-  @apply rounded-full border-none shadow-none pl-9 pr-9 text-lg;
   background-color: var(--green-primary);
   color: var(--white-primary);
-  height: 60px;
-  @media (width <= 48rem) {
-    @apply text-sm pl-4 pr-4;
-    height: 50px;
-  }
+}
+
+.btn.primary:hover {
+  background-color: var(--green-primary-dark);
 }
 
 .btn.secondary {
-  @apply rounded-full border-none shadow-none  pl-9 pr-9 text-lg;
   background-color: var(--white-primary);
   color: var(--green-primary);
-  height: 60px;
-  @media (width <= 48rem) {
-    @apply text-sm pl-4 pr-4;
-    height: 50px;
-  }
+}
+
+.btn.secondary:hover {
+  background-color: var(--white-primary-dark);
 }
