@@ -40,9 +40,11 @@
     console.log('clicked :', isOpen)
     isOpen = !isOpen
     if (isOpen) {
+      document.getElementsByTagName('body')[0].style.overflow = 'hidden'
       document.getElementById('burger-menu')?.classList.add('swap-active')
       document.getElementById('burger-menu')?.classList.remove('hidden')
     } else {
+      document.getElementsByTagName('body')[0].style.overflow = 'auto'
       document.getElementById('burger-menu')?.classList.add('hidden')
       document.getElementById('burger-menu')?.classList.remove('swap-active')
     }
