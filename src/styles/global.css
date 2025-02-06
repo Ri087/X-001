@@ -64,8 +64,10 @@ body {
 
 :root {
   --green-primary: #30a777;
+  --green-primary-dark: #2a946a;
   --green-secondary: #217553;
   --white-primary: #ffffff;
+  --white-primary-dark: #f2f2f2;
 }
 
 .text-green-primary {
