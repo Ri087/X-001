@@ -1,0 +1,13 @@
+---
+type tagProps = {
+  text: string
+}
+
+const { text } = Astro.props as tagProps
+---
+
+<div
+  class="flex justify-center items-center px-4 py-1 bg-green-gradient rounded-full"
+>
+  <p class="text-white text-xs">{text}</p>
+</div>

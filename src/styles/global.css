@@ -61,6 +61,18 @@ body {
   font-weight: 800;
 }
 
+.green-gradient {
+  color: linear-gradient(90deg, var(--green-primary), var(--green-secondary));
+}
+
+.bg-green-gradient {
+  background: linear-gradient(
+    270deg,
+    var(--green-primary),
+    var(--green-secondary)
+  );
+}
+
 :root {
   --green-primary: #30a777;
   --green-primary-dark: #2a946a;
@@ -87,6 +99,10 @@ body {
 
   .text-white-primary {
     color: var(--white-primary);
+  }
+
+  .text-white-primary-light-transparent {
+    color: var(--white-primary-light-transparent);
   }
 
   .text-white-primary-dark {
