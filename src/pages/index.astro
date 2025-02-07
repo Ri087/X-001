@@ -7,10 +7,7 @@ import '../styles/components/btn.css'
 import '../components/landing/HomeLanding.astro'
 import HomeLanding from '../components/landing/HomeLanding.astro'
 import StatLanding from '../components/landing/StatLanding.astro'
-import '../styles/components/presta-card.css'
-import Tag from '../components/utils/Tag.astro'
-import CustomButton from '../components/utils/CustomButton.astro'
-import RightArrow from '../components/svg/RightArrow.astro'
+import PrestationLanding from '../components/landing/PrestationLanding.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -24,40 +21,6 @@ import RightArrow from '../components/svg/RightArrow.astro'
     <!-- Page 2 -->
     <StatLanding />
     <!-- Page 3 -->
-    <div class="w-full h-screen px-10 flex flex-col items-center">
-      <div class="h-20 w-full flex items-center justify-start">
-        <p class="text-xl font-bold">Nos secteurs d’activités</p>
-      </div>
-      <div class="flex flex-col w-full h-80 rounded-2xl presta1">
-        <div class="flex h-full items-end"></div>
-        <div class="flex flex-col w-full px-4">
-          <div class="flex items-center h-10 text-white-primary">
-            <p>Habitat individuel</p>
-          </div>
-          <div class="flex flex-wrap items-center min-h-10 gap-x-3 gap-y-2">
-            <Tag text="DPE" />
-            <Tag text="RGE" />
-            <Tag text="Scan 3D" />
-            <Tag text="Accompagnement" />
-          </div>
-          <div
-            class="flex text-white-primary-light-transparent text-xs h-auto py-2"
-          >
-            <p>
-              Nous vous accompagnons dans l'évaluation et l'optimisation de
-              l'efficacité énergétique de votre habitation, en vue....
-            </p>
-          </div>
-          <!-- <div class="flex items-center justify-end h-10">
-            <button
-              class={`btn primary flex items-center justify-center rounded-full border-none shadow-none py-1 px-4 text-xs h-auto w-fit whitespace-nowrap lg:text-lg md:text-lg md:py-2 md:px-7 lg:py-3 lg:px-8`}
-            >
-              <p class="pl-2">Lire la suite</p>
-              <RightArrow h="24" w="24" />
-            </button>
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </div>
-</Layout>
+    <PrestationLanding />
+  </div></Layout
+>

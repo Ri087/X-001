@@ -1,0 +1,36 @@
+---
+import Tag from '../../components/utils/Tag.astro'
+import '../../styles/components/presta-card.css'
+
+type PrestationCardProps = {
+  title: string
+  content: string
+  prestation: string
+  tags?: string[]
+}
+
+const { title, content, prestation, tags } = Astro.props as PrestationCardProps
+---
+
+<a href="#presta1">
+  <div
+    class={`flex flex-col w-80 h-80 aspect-auto rounded-2xl ${prestation} md:w-[600px] md:h-[600px] md:hover:scale-102 md:transition-all lg:w-[600px] lg:h-[600px}`}
+  >
+    <div class="flex h-full items-end"></div>
+    <div class="flex flex-col w-full px-4 md:px-6 md:py-4">
+      <div class="flex items-center h-10 text-white-primary md:h-14">
+        <p class="md:text-2xl">{title}</p>
+      </div>
+      <div class="flex flex-wrap items-center min-h-10 gap-x-3 gap-y-2">
+        {tags?.map((tag) => <Tag text={tag} />)}
+      </div>
+      <div
+        class="flex text-white-primary-light-transparent text-xs h-auto py-2"
+      >
+        <p class="md:text-base">
+          {content}
+        </p>
+      </div>
+    </div>
+  </div>
+</a>

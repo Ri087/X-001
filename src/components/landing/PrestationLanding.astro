@@ -1,0 +1,37 @@
+---
+import PrestationCard from '../prestation/PrestationCard.astro'
+---
+
+<div
+  class="w-full h-auto px-10 flex flex-col items-center sm:bg-red-400 md:bg-blue-400 lg:bg-green-400"
+>
+  <div class="min-h-20 w-full flex items-center justify-start md:min-h-36">
+    <p class="text-xl font-bold md:text-4xl">Nos secteurs d’activités</p>
+  </div>
+  <div class="w-full flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12">
+    <PrestationCard
+      title="Habitat individuel"
+      content="Nous vous accompagnons dans l'évaluation et l'optimisation de l'efficacité énergétique de votre habitation, en vue...."
+      prestation="presta1"
+      tags={['DPE', 'RGE', 'Scan 3D', 'Accompagnement']}
+    />
+    <PrestationCard
+      title="Habitat collectif"
+      content="Nous vous accompagnons dans la transition energetique de votre coopropriété. L'audit énergétique est une analyse complète des performances...."
+      prestation="presta2"
+      tags={['DPE', 'RGE', 'DTG', 'PPT', 'AMO']}
+    />
+    <PrestationCard
+      title="Immeuble tertiaire"
+      content="Nous vous accompagnons dans la transition energetique de votre coopropriété. L'audit énergétique est une analyse complète des performances...."
+      prestation="presta3"
+      tags={['DPE', 'RGE', 'DTG', 'PPT', 'AMO']}
+    />
+    <PrestationCard
+      title="Collectivités et institutionnels"
+      content="Nous vous accompagnons dans la transition energetique de votre coopropriété. L'audit énergétique est une analyse complète des performances...."
+      prestation="presta4"
+      tags={['DPE', 'RGE', 'DTG', 'PPT', 'AMO']}
+    />
+  </div>
+</div>
