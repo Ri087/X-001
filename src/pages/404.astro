@@ -1,4 +1,15 @@
-<div>
-  Erreur retourner a l'accueil
-  <a href="/">Accueil</a>
-</div>
+---
+import Layout from '@/layouts/Layout.astro'
+import CustomBtn from '@/components/utils/CustomButton.astro'
+---
+
+<Layout>
+  <div
+    class="w-full h-screen flex items-center justify-center flex-col gap-y-5"
+  >
+    <p class="font-extrabold text-2xl md:text-4xl lg:text-6xl">
+      Page introuvable ...
+    </p>
+    <CustomBtn text="Retour à l'accueil" link="/" className="primary" />
+  </div>
+</Layout>

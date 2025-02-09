@@ -4,15 +4,22 @@ import '../../styles/components/presta-card.css'
 
 type PrestationCardProps = {
   title: string
+  link: string | null
   content: string
   prestation: string
   tags?: string[]
 }
 
-const { title, content, prestation, tags } = Astro.props as PrestationCardProps
+const {
+  title,
+  link = '#',
+  content,
+  prestation,
+  tags,
+} = Astro.props as PrestationCardProps
 ---
 
-<a href="#presta1">
+<a href={link}>
   <div
     class={`flex flex-col w-80 h-80 aspect-auto rounded-2xl ${prestation} shadow-lg md:w-[600px] md:h-[600px] md:hover:scale-102 md:transition-all lg:w-[600px] lg:h-[600px}`}
   >

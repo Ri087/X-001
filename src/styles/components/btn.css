@@ -1,5 +1,3 @@
-@import '@/styles/globals.css';
-
 .btn.primary {
   background-color: var(--green-primary);
   color: var(--white-primary);

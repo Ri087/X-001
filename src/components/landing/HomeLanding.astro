@@ -1,7 +1,7 @@
 ---
 import RightArrow from '../svg/RightArrow.astro'
 import MoreHouse from '../svg/MoreHouse.astro'
-import CustomBtn from '../../components/utils/CustomButton.astro'
+import CustomBtn from '@/components/utils/CustomButton.astro'
 ---
 
 <div
@@ -23,11 +23,11 @@ import CustomBtn from '../../components/utils/CustomButton.astro'
     <div
       class="flex flex-col w-48 mt-8 gap-4 md:flex-row md:w-3/4 md:mt-16 lg:mt-8"
     >
-      <CustomBtn text="À propos" className="primary">
+      <CustomBtn text="À propos" link="a-propos" className="primary">
         <RightArrow />
       </CustomBtn>
 
-      <CustomBtn text="Nos prestations" className="secondary">
+      <CustomBtn text="Nos prestations" link="presations" className="secondary">
         <MoreHouse />
       </CustomBtn>
     </div>
