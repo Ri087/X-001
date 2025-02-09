@@ -1,11 +1,11 @@
-@import '../global.css';
-
 .btn.primary {
   background-color: var(--green-primary);
   color: var(--white-primary);
 }
 
 .btn.primary:hover {
+  scale: 1.05;
+  transition: all 0.3s;
   background-color: var(--green-primary-dark);
 }
 
@@ -15,5 +15,7 @@
 }
 
 .btn.secondary:hover {
+  scale: 1.05;
+  transition: all 0.3s;
   background-color: var(--white-primary-dark);
 }

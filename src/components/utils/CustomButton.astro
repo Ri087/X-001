@@ -3,16 +3,17 @@ import '../../styles/components/btn.css'
 
 type ButtonProps = {
   text: string
+  link: string | null
   className: string
 }
 
-const { text, className } = Astro.props as ButtonProps
+const { text, link = '#', className } = Astro.props as ButtonProps
 ---
 
-<button
-  class={`btn ${className} flex items-center justify-center rounded-full border-none shadow-none  py-6 w-fit whitespace-nowrap font-normal lg:h-14 lg:text-lg`}
+<a
+  href={link}
+  class={`btn ${className} flex items-center justify-center rounded-full border-none shadow-none py-2 px-7 h-auto w-fit whitespace-nowrap lg:text-lg md:text-lg md:py-2 md:px-7 lg:py-3 lg:px-8`}
 >
   <p class="pl-2">{text}</p>
   <slot />
-</button>
-<!-- rounded-full border-none shadow-none   text-lg -->
+</a>

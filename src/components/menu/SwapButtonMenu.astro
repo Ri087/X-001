@@ -32,19 +32,26 @@
 <script>
   let isOpen = false
   const toggleButtonMenu = document.getElementById('swap-menu') as Element
+  const burgerMenu = document.getElementById('burger-menu') as HTMLElement
+
   toggleButtonMenu?.addEventListener('click', () => {
     toggleMenu()
   })
 
   const toggleMenu = () => {
-    console.log('clicked :', isOpen)
     isOpen = !isOpen
     if (isOpen) {
-      document.getElementById('burger-menu')?.classList.add('swap-active')
-      document.getElementById('burger-menu')?.classList.remove('hidden')
+      document.documentElement.style.overflow = 'hidden'
+      document.body.style.overflow = 'hidden'
+      document.body.style.position = 'relative' // ✅ Évite que le menu passe en fixed
+      burgerMenu?.classList.add('swap-active')
+      burgerMenu?.classList.remove('hidden')
     } else {
-      document.getElementById('burger-menu')?.classList.add('hidden')
-      document.getElementById('burger-menu')?.classList.remove('swap-active')
+      document.documentElement.style.overflow = 'auto'
+      document.body.style.overflow = 'auto'
+      document.body.style.position = 'absolute' // ✅ Rétablir la position normale
+      burgerMenu?.classList.add('hidden')
+      burgerMenu?.classList.remove('swap-active')
     }
   }
 </script>
