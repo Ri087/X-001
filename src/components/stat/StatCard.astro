@@ -1,6 +1,4 @@
 ---
-import '../../styles/components/stat-card.css'
-
 type StatCardProps = {
   title: string
   content: string
@@ -10,17 +8,15 @@ type StatCardProps = {
 const { title, content, subText } = Astro.props as StatCardProps
 ---
 
-<div
-  class="flex flex-col w-full bg-[#EFEFEFd4] h-52 pl-10 rounded-xl md:w-md md:hover:scale-102 transition-all lg:h-64 shadow-lg"
->
-  <div class="h-3/9 w-full flex items-end text-2xl lg:text-3xl">{title}</div>
+<div class="flex flex-col w-[347px] h-[186px] bg-[#F9F9F9] pl-10 rounded-xl">
+  <div class="h-3/9 w-full flex items-end text-3xl">{title}</div>
   <div
-    class="h-4/9 w-full flex items-center text-7xl font-extrabold green-gradient lg:text-8xl"
+    class="h-4/9 w-full flex items-center text-5xl font-extrabold green-gradient"
   >
     {content}
   </div>
   <div
-    class="h-2/9 w-full flex items-start text-sm text-dark-primary-transparent lg:text-lg"
+    class="h-2/9 w-full flex items-start text-md text-dark-primary-transparent lg:text-lg"
   >
     {subText}
   </div>

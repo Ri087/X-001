@@ -40,15 +40,14 @@ body {
 }
 
 .green-gradient {
-  color: linear-gradient(90deg, var(--green-primary), var(--green-secondary));
+  background: linear-gradient(90deg, var(--green1), var(--green2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .bg-green-gradient {
-  background: linear-gradient(
-    270deg,
-    var(--green-primary),
-    var(--green-secondary)
-  );
+  background: linear-gradient(270deg, var(--green1), var(--green2));
 }
 
 :root {
@@ -61,32 +60,6 @@ body {
   --dark-60: rgba(26, 26, 26, 0.6);
 }
 @layer utilities {
-  /* Notes : font size */
-  /* .text-14 {
-    font-size: 14px;
-  }
-  .text-16 {
-    font-size: 16px;
-  }
-  .text-20 {
-    font-size: 20px;
-  }
-  .text-24 {
-    font-size: 24px;
-  }
-  .text-32 {
-    font-size: 32px;
-  }
-  .text-36 {
-    font-size: 36px;
-  }
-  .text-40 {
-    font-size: 40px;
-  }
-  .text-48 {
-    font-size: 48px;
-  } */
-
   /* Notes : fopnt weight */
   .light-text {
     font-weight: 300;

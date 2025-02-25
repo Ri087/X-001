@@ -1,21 +1,12 @@
 ---
 import StatCard from '../../components/stat/StatCard.astro'
+import RightArrow from '../svg/RightArrow.astro'
+import CustomButton from '../utils/CustomButton.astro'
 ---
 
-<div class="w-full h-auto flex flex-col md:justify-center md:min-h-[80vh]">
+<div class="w-full h-auto flex flex-col pt-18">
   <div
-    class="w-full flex justify-center items-center drop-shadow-md min-h-32 text-sm md:min-h-52 md:text-lg md:items-center lg:text-2xl"
-  >
-    <span
-      class="flex font-bold green-gradient text-5xl mr-1 md:text-8xl lg:text-9xl lg:mr-2"
-    >
-      ENERGIA
-    </span>
-    <p class="mt-5 md:mt-12 lg:mt-16">en quelques chiffres..</p>
-  </div>
-
-  <div
-    class="w-full flex flex-wrap items-center justify-center gap-3 px-10 min-h-auto gap-y-10 md:min-h-auto lg:h-7/10 lg:items-start gap-x-5 lg:gap-15 xl:gap-x-20"
+    class="w-full h-full flex flex-col items-center justify-evenly gap-y-10 md:flex-row md:flex-wrap md:gap-x-3"
   >
     <StatCard
       title="Chiffre d'affaire"
@@ -32,5 +23,10 @@ import StatCard from '../../components/stat/StatCard.astro'
       content="182"
       subText="+22 Comparé à l’an dernier"
     />
+  </div>
+  <div class="flex w-full justify-center items-center h-24 md:h-32">
+    <CustomButton text="Plus de chiffres" link="a-propos" className="primary">
+      <RightArrow />
+    </CustomButton>
   </div>
 </div>
