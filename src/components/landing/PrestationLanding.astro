@@ -1,39 +1,33 @@
 ---
-import PrestationCard from '../prestation/PrestationCard.astro'
+import RightArrow from '../svg/RightArrow.astro'
+import TreeXHome from '../svg/TreeXHome.astro'
+import CustomButton from '../utils/CustomButton.astro'
 ---
 
-<div class="w-full h-auto px-10 flex flex-col items-center">
-  <div class="min-h-32 w-full flex items-center justify-start md:min-h-36">
-    <p class="text-3xl font-bold md:text-5xl">Nos secteurs d’activités</p>
+<div
+  class="w-full h-auto flex flex-col px-5 py-20 gap-y-5 md:max-h-[624px] md:flex-row md:justify-center"
+>
+  <div class="flex md:justify-center px-4 md:w-1/2">
+    <img
+      src="/images/blue-and-orange-building.png"
+      alt="building"
+      class="h-auto w-auto max-h-[432px]"
+    />
   </div>
-  <div class="w-full flex flex-wrap justify-center gap-4 md:gap-8 lg:gap-12">
-    <PrestationCard
-      title="Habitat individuel"
-      link="/prestations/habitat-individuel"
-      content="Nous vous accompagnons dans l'évaluation et l'optimisation de l'efficacité énergétique de votre habitation, en vue...."
-      prestation="presta1"
-      tags={['DPE', 'RGE', 'Scan 3D', 'Accompagnement']}
-    />
-    <PrestationCard
-      title="Habitat collectif"
-      link="/prestations/habitat-collectif"
-      content="Nous vous accompagnons dans la transition energetique de votre coopropriété. L'audit énergétique est une analyse complète des performances...."
-      prestation="presta2"
-      tags={['DPE', 'RGE', 'DTG', 'PPT', 'AMO']}
-    />
-    <PrestationCard
-      title="Immeuble tertiaire"
-      link="/prestations/immeuble-tertiaire"
-      content="Nous vous accompagnons dans la transition energetique de votre coopropriété. L'audit énergétique est une analyse complète des performances...."
-      prestation="presta3"
-      tags={['DPE', 'RGE', 'DTG', 'PPT', 'AMO']}
-    />
-    <PrestationCard
-      title="Collectivités et institutionnels"
-      link="/prestations/collectivites-et-institutionnels"
-      content="Nous vous accompagnons dans la transition energetique de votre coopropriété. L'audit énergétique est une analyse complète des performances...."
-      prestation="presta4"
-      tags={['DPE', 'RGE', 'DTG', 'PPT', 'AMO']}
-    />
+  <div class="flex flex-col gap-y-3 px-4 md:w-1/2 md:gap-y-8 md:justify-center">
+    <TreeXHome />
+    <p class="text-3xl font-bold">Nos services pour vous !</p>
+    <p class="text-[16px] max-w-[550px]">
+      Nos equipes travailles pour vous, venez decouvrire nos secteurs d’activité
+      ! Nosu sommes present sur les habitat individuel, collectif, les immeubles
+      tertiaires ainsi que les batiments institutionnels et collectivités.
+    </p>
+    <CustomButton
+      text="Decouvrez nos prestations "
+      link="prestations"
+      className="primary"
+    >
+      <RightArrow />
+    </CustomButton>
   </div>
 </div>
