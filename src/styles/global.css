@@ -4,11 +4,23 @@
 }
 @font-face {
   font-family: 'Nunito';
+  src: url('/fonts/Nunito-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
   src: url('/fonts/Nunito-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Nunito';
   src: url('/fonts/Nunito-Bold.ttf') format('truetype');
@@ -23,42 +35,8 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Nunito';
-  src: url('/fonts/Nunito-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nunito';
-  src: url('/fonts/Nunito-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
 body {
   font-family: 'Nunito', sans-serif;
-}
-
-.light-text {
-  font-weight: 300;
-}
-
-.regular-text {
-  font-weight: 400;
-}
-
-.medium-text {
-  font-weight: 500;
-}
-
-.bold-text {
-  font-weight: 700;
-}
-
-.extra-bold-text {
-  font-weight: 800;
 }
 
 .green-gradient {
@@ -74,82 +52,55 @@ body {
 }
 
 :root {
-  --green-primary: #30a777;
-  --green-primary-dark: #2a946a;
-  --green-secondary: #217553;
-  --white-primary: #ffffff;
-  --white-primary-dark: #efefef;
-  --white-primary-light-transparent: rgba(255, 255, 255, 0.75);
-  --dark-primary: #1a1a1a;
-  --dark-primary-transparent: rgba(56, 56, 56, 0.623);
-  --dark-secondary: #333333;
+  --green1: #30a777;
+  --green2: #217553;
+  --white1: #f9f9f9f9;
+  --white-85: rgba(249, 249, 249, 0.85);
+  --white-75: rgba(249, 249, 249, 0.75);
+  --dark: rgb(26, 26, 26);
+  --dark-60: rgba(26, 26, 26, 0.6);
 }
 @layer utilities {
-  .text-green-primary {
-    color: var(--green-primary);
+  /* Notes : font size */
+  /* .text-14 {
+    font-size: 14px;
   }
-
-  .text-green-primary-dark {
-    color: var(--green-primary-dark);
+  .text-16 {
+    font-size: 16px;
   }
-
-  .text-green-secondary {
-    color: var(--green-secondary);
+  .text-20 {
+    font-size: 20px;
   }
-
-  .text-white-primary {
-    color: var(--white-primary);
+  .text-24 {
+    font-size: 24px;
   }
-
-  .text-white-primary-light-transparent {
-    color: var(--white-primary-light-transparent);
+  .text-32 {
+    font-size: 32px;
   }
-
-  .text-white-primary-dark {
-    color: var(--white-primary-dark);
+  .text-36 {
+    font-size: 36px;
   }
-
-  .text-white-primary-transparent {
-    color: var(--white-primary-light-transparent);
+  .text-40 {
+    font-size: 40px;
   }
+  .text-48 {
+    font-size: 48px;
+  } */
 
-  .text-dark-primary {
-    color: var(--dark-primary);
+  /* Notes : fopnt weight */
+  .light-text {
+    font-weight: 300;
   }
-
-  .text-dark-primary-transparent {
-    color: var(--dark-primary-transparent);
+  .regular-text {
+    font-weight: 400;
   }
-
-  .text-dark-secondary {
-    color: var(--dark-secondary);
+  .medium-text {
+    font-weight: 500;
   }
-
-  .bg-green-primary {
-    background-color: var(--green-primary);
+  .bold-text {
+    font-weight: 700;
   }
-
-  .bg-green-primary-dark {
-    background-color: var(--green-primary-dark);
-  }
-
-  .bg-green-secondary {
-    background-color: var(--green-secondary);
-  }
-
-  .bg-white-primary {
-    background-color: var(--white-primary);
-  }
-
-  .bg-white-primary-dark {
-    background-color: var(--white-primary-dark);
-  }
-
-  .bg-dark-primary {
-    background-color: var(--dark-primary);
-  }
-
-  .bg-dark-secondary {
-    background-color: var(--dark-secondary);
+  .extra-bold-text {
+    font-weight: 800;
   }
 }

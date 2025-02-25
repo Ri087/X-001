@@ -1,12 +1,15 @@
 .btn.primary {
-  background-color: var(--green-primary);
-  color: var(--white-primary);
+  background-color: var(--green1);
+  color: var(--white1);
+  /* padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px; */
 }
 
 .btn.primary:hover {
   scale: 1.05;
   transition: all 0.3s;
-  background-color: var(--green-primary-dark);
 }
 
 .btn.secondary {
