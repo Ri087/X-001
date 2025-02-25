@@ -1,0 +1,46 @@
+---
+import Draw from '@/components/svg/Draw.astro'
+import RightArrow from '@/components/svg/RightArrow.astro'
+import CustomButton from '@/components/utils/CustomButton.astro'
+import WeSubSection from '@/components/landing/we/WeSubSection.astro'
+---
+
+<div
+  class="w-full h-auto bg-[#F9F9F9] flex flex-col gap-y-5 px-8 py-14 md:items-center md:gap-y-10"
+>
+  <div class="w-full h-auto flex flex-col items-center gap-y-5">
+    <Draw />
+    <p class="text-3xl font-bold">Pourquoi choisir Energia consulting ?</p>
+    <p class="text-md">
+      L'histoire commence avec deux esprits passionnés par l'énergie et
+      déterminés à faire une différence dans le paysage de l'efficacité
+      énergétique.
+    </p>
+  </div>
+  <div
+    class="w-full h-auto flex flex-wrap justify-between bg-white rounded-2xl gap-y-2 p-2 inset-shadow-2xs md:max-w-[1190px] md:justify-around"
+  >
+    <WeSubSection
+      title="Conseil et suivi"
+      content="Tout au long de votre démarche"
+    />
+
+    <WeSubSection
+      title="Conseil et suivi"
+      content="Tout au long de votre démarche"
+    />
+    <WeSubSection
+      title="Conseil et suivi"
+      content="Tout au long de votre démarche"
+    />
+    <WeSubSection
+      title="Conseil et suivi"
+      content="Tout au long de votre démarche"
+    />
+  </div>
+  <div>
+    <CustomButton text="À propos de nous " className="primary" link="a-propos">
+      <RightArrow />
+    </CustomButton>
+  </div>
+</div>

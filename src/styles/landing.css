@@ -1,13 +1,20 @@
 .landing-bg {
-  background: url('../assets/images/background.png');
+  background: url('../assets/images/background.webp');
   background-size: cover; /* L'image prend tout l'espace et garde ses proportions */
   background-position: center; /* Centre l'image */
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
-  width: 100vw; /* Prend toute la largeur de l'écran */
-  height: 100vh; /* Prend toute la hauteur de l'écran */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  height: 85vh; /* Prend toute la hauteur de l'écran */
   margin: 0; /* Supprime les marges par défaut */
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .landing-bg {
+    height: 90vh; /* Prend toute la hauteur de l'écran */
+  }
+}
+
 /* w-233px h-70px */
 .logo {
   min-width: 179px; /* 233px / 1.3 */

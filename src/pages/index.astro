@@ -9,20 +9,26 @@ import '@/components/landing/HomeLanding.astro'
 import HomeLanding from '@/components/landing/HomeLanding.astro'
 import StatLanding from '@/components/landing/StatLanding.astro'
 import PrestationLanding from '@/components/landing/PrestationLanding.astro'
+import Draw from '@/components/svg/Draw.astro'
+import CustomButton from '@/components/utils/CustomButton.astro'
+import RightArrow from '@/components/svg/RightArrow.astro'
+import WeLanding from '@/components/landing/WeLanding.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <div class="w-full h-full landing-bg bg-cover bg-center">
+  <div class="w-full h-full">
     <Menu />
-    <!-- Page 1 -->
+    <!-- Section 1 -->
     <HomeLanding />
-    <!-- Page 2 -->
+    <!-- Section 2 -->
     <StatLanding />
-    <!-- Page 3 -->
+    <!-- Section 3 -->
     <PrestationLanding />
+    <!-- Section 4 -->
+    <WeLanding />
     <Footer />
-  </div></Layout
->
+  </div>
+</Layout>
