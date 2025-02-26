@@ -1,0 +1,25 @@
+---
+type CardProps = {
+  text: string
+  image: string
+}
+
+const { text, image } = Astro.props as CardProps
+
+console.log(image)
+---
+
+<div class="flex w-full py-2 px-4 h-auto md:max-w-1/3">
+  <div class="flex flex-col w-full">
+    <div
+      class="flex w-full h-[240px] max-h-[240px] rounded-2xl bg-cover bg-no-repeat bg-center"
+      style={{
+        backgroundImage: `url(src/assets/images/${image})`,
+      }}
+    >
+    </div>
+    <div class="w-full">
+      <p class="text-md text-[#0000006f]">{text}</p>
+    </div>
+  </div>
+</div>
