@@ -22,3 +22,7 @@
   height: 53px;
   width: 179px;
 }
+
+.realisation-img-section {
+  background-image: url('../assets/images/realisation-example-section.webp');
+}
