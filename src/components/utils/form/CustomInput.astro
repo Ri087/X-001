@@ -17,12 +17,14 @@ const {
 ---
 
 <div class="flex flex-col w-full px-6">
-  <label for={id} class=`flex flex-col ${size} text-sm`>{label} </label>
+  <label for={id} class=`flex flex-col ${size} text-sm font-light`
+    >{label}
+  </label>
   <input
     type={type}
     id={id}
     name={id}
-    class="w-full border border-[#bfbfbf] rounded-md p-2 text-sm"
+    class="w-full border border-[#bfbfbf] rounded-md p-2 text-sm font-light"
     placeholder={placeholder}
   />
 </div>

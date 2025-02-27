@@ -1,0 +1,38 @@
+---
+import Image from 'astro/components/Image.astro'
+import View from '../utils/View.astro'
+import LocalFaqImage from '../../assets/images/faq-image.webp'
+import Collapse from './faq/collapse.astro'
+import Faq from '../svg/Faq.astro'
+---
+
+<View>
+  <div class="w-full h-auto flex flex-col gap-y-5 md:gap-y-18">
+    <div class="w-full h-auto flex flex-col items-center gap-y-5">
+      <Faq />
+      <p class="text-3xl font-bold">
+        Des questions ? Nous avons surement les réponses !
+      </p>
+      <p class="text-md">
+        Nunc dictum, tellus a ullamcorper ornare, purus felis efficitur nisl, at
+        lacinia nibh nisi in lorem. Vivamus blandit laoreet pretium
+      </p>
+    </div>
+    <div class="w-full h-auto flex flex-col gap-y-5 md:flex-row">
+      <div class="w-full h-auto flex md:pr-4">
+        <Image
+          src={LocalFaqImage}
+          alt={'faq section image'}
+          class="h-auto w-full object-cover rounded-2xl max-h-[420px]"
+        />
+      </div>
+      <div class="h-auto w-full flex flex-col gap-y-3 md:pl-4">
+        <Collapse question="Qui suis-je ?" answer="Enchanté !" />
+        <Collapse question="Qui suis-je ?" answer="Enchanté !" />
+        <Collapse question="Qui suis-je ?" answer="Enchanté !" />
+        <Collapse question="Qui suis-je ?" answer="Enchanté !" />
+        <Collapse question="Qui suis-je ?" answer="Enchanté !" />
+      </div>
+    </div>
+  </div>
+</View>
