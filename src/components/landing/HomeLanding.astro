@@ -1,33 +1,28 @@
 ---
 import RightArrow from '../svg/RightArrow.astro'
 import CustomBtn from '@/components/utils/CustomButton.astro'
+import View from '../utils/View.astro'
 ---
 
-<div
-  class="landing-bg w-full h-[85vh] flex items-center justify-center md:h-[90vh] bg-red-500"
->
-  <div class="h-full w-full flex flex-col pt-16 px-8 md:px-16 lg:px-28">
-    <div
-      class="h-auto w-full flex justify-center flex-col gap-y-5 md:max-w-[670px] md:gap-y-10"
-    >
-      <p
-        class="text-white text-[40px] font-extrabold md:text-5xl md:leading-16"
-      >
-        Optimisez la performance énergétique de votre patrimoine
+<View bg="landing-bg">
+  <div
+    class="h-auto w-full flex flex-col justify-center gap-y-5 md:max-w-[670px] md:gap-y-10"
+  >
+    <p class="text-white text-[40px] font-extrabold md:text-5xl md:leading-16">
+      Optimisez la performance énergétique de votre patrimoine
+    </p>
+    <p class="text-[var(--white-85)] text-md font-light md:text-xl">
+      Notre expertise est à votre service pour vous accompagner dans, la
+      réduction de vos coûts énergétiques, l'amélioration de votre empreinte et
+      la valorisation de votre patrimoine.
+    </p>
+    <div class="h-auto w-full flex flex-col gap-y-3">
+      <CustomBtn text="Nos prestations" link="a-propos" className="primary">
+        <RightArrow />
+      </CustomBtn>
+      <p class="text-[var(--white-75)] text-sm font-light">
+        Decouvez maintenant nos prestations !
       </p>
-      <p class="text-[var(--white-85)] text-md font-light md:text-xl">
-        Notre expertise est à votre service pour vous accompagner dans, la
-        réduction de vos coûts énergétiques, l'amélioration de votre empreinte
-        et la valorisation de votre patrimoine.
-      </p>
-      <div class="h-auto w-full flex flex-col gap-y-3">
-        <CustomBtn text="Nos prestations" link="a-propos" className="primary">
-          <RightArrow />
-        </CustomBtn>
-        <p class="text-[var(--white-75)] text-sm font-light">
-          Decouvez maintenant nos prestations !
-        </p>
-      </div>
     </div>
   </div>
-</div>
+</View>

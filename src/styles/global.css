@@ -40,14 +40,14 @@ body {
 }
 
 .green-gradient {
-  background: linear-gradient(90deg, var(--green1), var(--green2));
+  background: linear-gradient(90deg, var(--green2), var(--green1));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .bg-green-gradient {
-  background: linear-gradient(270deg, var(--green1), var(--green2));
+  background: linear-gradient(270deg, var(--green2), var(--green1));
 }
 
 :root {
@@ -78,4 +78,8 @@ body {
   .extra-bold-text {
     font-weight: 800;
   }
+}
+
+.max-size {
+  max-width: 1440px;
 }

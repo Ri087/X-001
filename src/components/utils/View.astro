@@ -1,0 +1,12 @@
+---
+type ViewProps = {
+  bg: string
+}
+const { bg = 'transparent' } = Astro.props as ViewProps
+---
+
+<div class=`${bg} w-full h-auto flex justify-center`>
+  <div class="w-full h-auto flex px-8 py-16 md:px-16 md:py-24 max-size">
+    <slot />
+  </div>
+</div>
