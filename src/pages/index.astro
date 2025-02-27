@@ -9,20 +9,30 @@ import '@/components/landing/HomeLanding.astro'
 import HomeLanding from '@/components/landing/HomeLanding.astro'
 import StatLanding from '@/components/landing/StatLanding.astro'
 import PrestationLanding from '@/components/landing/PrestationLanding.astro'
+import WeLanding from '@/components/landing/WeLanding.astro'
+import RealisationLanding from '@/components/landing/RealisationLanding.astro'
+import ContactLanding from '@/components/landing/ContactLanding.astro'
+import FaqLanding from '@/components/landing/FaqLanding.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <div class="w-full h-full landing-bg bg-cover bg-center">
-    <Menu />
-    <!-- Page 1 -->
-    <HomeLanding />
-    <!-- Page 2 -->
-    <StatLanding />
-    <!-- Page 3 -->
-    <!-- <PrestationLanding /> -->
-    <Footer />
-  </div></Layout
->
+  <Menu />
+  <!-- Section 1 -->
+  <HomeLanding />
+  <!-- Section 2 -->
+  <StatLanding />
+  <!-- Section 3 -->
+  <PrestationLanding />
+  <!-- Section 4 -->
+  <WeLanding />
+  <!-- Section 5 -->
+  <RealisationLanding />
+  <!-- Section 6 -->
+  <ContactLanding />
+  <!-- Section 7 -->
+  <FaqLanding />
+  <Footer />
+</Layout>

@@ -1,0 +1,30 @@
+---
+type CustomInputProps = {
+  id: string
+  label: string
+  type: 'text' | 'email' | 'tel'
+  placeholder: string
+  size: 'w-full' | 'w-1/2'
+}
+
+const {
+  id,
+  label,
+  type = 'text',
+  placeholder,
+  size = 'w-full',
+} = Astro.props as CustomInputProps
+---
+
+<div class="flex flex-col w-full px-6">
+  <label for={id} class=`flex flex-col ${size} text-sm font-light`
+    >{label}
+  </label>
+  <input
+    type={type}
+    id={id}
+    name={id}
+    class="w-full border border-[#bfbfbf] rounded-md p-2 text-sm font-light"
+    placeholder={placeholder}
+  />
+</div>

@@ -1,0 +1,115 @@
+---
+import RightArrow from '../svg/RightArrow.astro'
+import CustomButton from '../utils/CustomButton.astro'
+import CustomInput from '../utils/form/CustomInput.astro'
+import Image from 'astro/components/Image.astro'
+import Contact from '../svg/Contact.astro'
+import LocalLocalisationImage from '@/assets/images/maps-localisation-example.webp'
+import View from '../utils/View.astro'
+import Send from '../svg/Send.astro'
+---
+
+<View bg="bg-[#F9F9F9]">
+  <div class="flex w-full h-full flex-col gap-y-10 md:flex-row">
+    <div class="h-auto w-full flex flex-col gap-y-5 md:w-1/2 md:pr-4">
+      <Contact />
+      <p class="text-3xl font-bold">
+        Dites nous en plus. Hésitez pas à nous contacter !
+      </p>
+      <p class="text-md">
+        Fusce in tempus neque. Ut tortor dui, pulvinar aliquet orci iaculis,
+        tincidunt placerat ligula. Maecenas ornare, tellus quis mollis placerat,
+        mi quam egestas metus, vitae blandit magna massa in nisi.
+      </p>
+      <div class="w-full h-auto flex justify-center">
+        <Image
+          src={LocalLocalisationImage}
+          alt="Contact image"
+          class="h-auto w-full object-cover rounded-2xl max-w-[420px] md:max-w-full md:max-h-[420px]"
+        />
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col h-auto w-full items-center md:w-1/2 md:pl-4 md:h-full md:justify-center"
+    >
+      <div
+        class="flex flex-col w-full max-w-[420px] h-auto bg-white rounded-2xl"
+      >
+        <div class="flex flex-col w-full">
+          <p class="text-2xl font-bold p-6">Nous contacter</p>
+        </div>
+        <form class="flex flex-col w-full gap-y-3 pb-4">
+          <div class="flex w-full">
+            <CustomInput
+              label="Nom"
+              id="lastname"
+              type="text"
+              placeholder="Doe"
+              size="w-1/2"
+            />
+            <CustomInput
+              label="Prénom"
+              id="firstname"
+              type="text"
+              placeholder="Jhon"
+              size="w-1/2"
+            />
+          </div>
+          <div class="flex w-full">
+            <CustomInput
+              label="Adresse e-mail"
+              id="email"
+              type="email"
+              placeholder="Jhon.doe@example.com"
+              size="w-full"
+            />
+          </div>
+          <div class="flex w-full">
+            <CustomInput
+              label="Téléphone"
+              id="phone"
+              type="tel"
+              placeholder="06 xx xx xx xx"
+              size="w-full"
+            />
+          </div>
+          <div class="flex w-full">
+            <CustomInput
+              label="Code postal"
+              id="postal"
+              type="text"
+              placeholder="69 001"
+              size="w-full"
+            />
+          </div>
+          <div class="flex w-full">
+            <CustomInput
+              label="Object de votre demande"
+              id="object"
+              type="text"
+              placeholder="Mal de dents"
+              size="w-full"
+            />
+          </div>
+          <div class="flex w-full px-6">
+            <label for="name" class="flex flex-col w-full text-sm"
+              >Object de votre demande
+              <textarea
+                id="name"
+                name="name"
+                class="w-full border border-[#bfbfbf] rounded-md p-2 text-sm lg:min-h-[120px]"
+                placeholder="J'ai mal aux dents docteur"></textarea>
+            </label>
+          </div>
+          <div class="flex w-full p-6 justify-center items-center">
+            <CustomButton text="Envoyer" link="#" className="primary"
+              ><Send /></CustomButton
+            >
+          </div>
+        </form>
+        <div class="flex w-full justify-between"></div>
+      </div>
+    </div>
+  </div>
+</View>

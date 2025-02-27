@@ -40,22 +40,24 @@ body {
 }
 
 .green-gradient {
-  background: linear-gradient(90deg, var(--green1), var(--green2));
+  background: linear-gradient(90deg, var(--green2), var(--green1));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .bg-green-gradient {
-  background: linear-gradient(270deg, var(--green1), var(--green2));
+  background: linear-gradient(270deg, var(--green2), var(--green1));
 }
 
 :root {
   --green1: #30a777;
   --green2: #217553;
-  --white1: #f9f9f9f9;
-  --white-85: rgba(249, 249, 249, 0.85);
-  --white-75: rgba(249, 249, 249, 0.75);
+  --white1: #fefefe;
+  --white2: #f9f9f9;
+  --white-85: rgba(255, 255, 255, 0.85);
+  --white-75: rgba(255, 255, 255, 0.75);
+  --white-2-30: #f9f9f93d;
   --dark: rgb(26, 26, 26);
   --dark-60: rgba(26, 26, 26, 0.6);
 }
@@ -76,4 +78,8 @@ body {
   .extra-bold-text {
     font-weight: 800;
   }
+}
+
+.max-size {
+  max-width: 1440px;
 }
