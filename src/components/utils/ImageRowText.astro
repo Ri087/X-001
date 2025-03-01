@@ -1,0 +1,28 @@
+---
+import Image from 'astro/components/Image.astro'
+
+type ImageRowTextProps = {
+  image: ImageMetadata
+  reversed: boolean
+}
+
+const { image, reversed = false } = Astro.props as ImageRowTextProps
+---
+
+<div
+  class="h-auto w-full flex flex-col md:flex-row"
+  class:list={{ 'md:flex-row-reverse': reversed }}
+>
+  <!-- Image -->
+  <div class="flex w-full h-full md:w-1/2 md:justify-center md:px-4">
+    <Image
+      src={image}
+      alt="Prestation 1 section image"
+      class="h-auto w-full object-cover rounded-2xl max-h-[420px]"
+    />
+  </div>
+
+  <div class="flex flex-col mt-5 gap-y-6 md:w-1/2 md:pl-4 md:justify-center">
+    <slot />
+  </div>
+</div>

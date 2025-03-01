@@ -1,0 +1,113 @@
+---
+import '@/styles/abous-us.css'
+import Teams from '@/components/svg/Teams.astro'
+import RightArrow from '@/components/svg/RightArrow.astro'
+import CustomButton from '@/components/utils/CustomButton.astro'
+import View from '@/components/utils/View.astro'
+import Layout from '@/layouts/Layout.astro'
+import ImageRowText from '@/components/utils/ImageRowText.astro'
+import localAboutUsSectionImage from '@/assets/images/about-us-section.webp'
+import ManWithWindows from '@/components/svg/ManWithWindows.astro'
+import Image from 'astro/components/Image.astro'
+import localBaoImage from '@/assets/images/tools/bao.webp'
+import localbimeoImage from '@/assets/images/tools/bimeo.webp'
+import localUnknownImage from '@/assets/images/tools/unknown.webp'
+import Meet from '@/components/svg/Meet.astro'
+import FaqLanding from '@/components/landing/FaqLanding.astro'
+---
+
+<Layout>
+  <View bg="about-us-bg">
+    <div
+      class="h-auto w-full flex flex-col justify-center gap-y-5 md:max-w-[670px] md:gap-y-10"
+    >
+      <Teams />
+      <p
+        class="text-white text-[40px] font-extrabold md:text-5xl md:leading-16"
+      >
+        « Notre maison brûle et nous regardons ailleurs »
+      </p>
+      <p class="text-[var(--white-85)] text-md font-light md:text-xl">
+        Jaques Chirac 1939-2019
+      </p>
+      <div class="h-auto w-full flex flex-col gap-y-3">
+        <CustomButton text="Nous découvrir" link="a-propos" className="primary">
+          <RightArrow />
+        </CustomButton>
+      </div>
+    </div>
+  </View>
+  <View>
+    <ImageRowText image={localAboutUsSectionImage} reversed="true">
+      <p class="text-3xl font-bold">Qui sommes nous ?</p>
+      <p class="text-[16px] max-w-[550px]">
+        L'histoire d'Energia Consulting commence avec deux esprits passionnés
+        par l'énergie et déterminés à faire une différence dans le paysage de
+        l'efficacité énergétique. Les fondateurs, ont réuni leurs compétences
+        complémentaires pour créer une entreprise axée sur l'innovation, la
+        durabilité et l'excellence
+      </p>
+      <p class="text-[16px] max-w-[550px]">
+        Energia Consulting a été fondée avec une vision claire : offrir des
+        solutions énergétiques durables et personnalisées aux entreprises et aux
+        particuliers, en mettant l'accent sur l'efficacité énergétique et les
+        énergies renouvelables
+      </p>
+      <p class="text-[16px] max-w-[550px]">
+        Depuis sa création, Energia Consulting a su se démarquer en proposant
+        une approche globale et intégrée pour répondre aux besoins énergétiques
+        de ses clients. L'équipe d'experts d'Energia Consulting travaille en
+        étroite collaboration avec les clients pour comprendre leurs objectifs,
+        analyser leurs consommations et concevoir des solutions sur mesure qui
+        maximisent les économies d'énergie tout en préservant l'environnement
+      </p>
+    </ImageRowText>
+  </View>
+  <View bg="bg-[#f9f9f9]">
+    <div class="w-full h-auto flex flex-col gap-y-8 md:flex-row">
+      <div class="w-full h-auto flex flex-col gap-y-5 md:w-2/5">
+        <ManWithWindows />
+        <p class="text-3xl font-bold">Avec quoi travaillons nous ?</p>
+        <p class="text-md">
+          Petite explication sur le choix etcc ... Vestibulum a tempor enim.
+          Aenean nec felis augue. Duis laoreet fringilla enim, ac convallis
+          neque laoreet ut.
+        </p>
+      </div>
+      <div
+        class="w-full h-auto flex flex-col items-center gap-y-10 md:w-3/5 md:flex-row md:gap-x-5 md:justify-between md:pl-20 md:flex-wrap"
+      >
+        <Image src={localUnknownImage} alt="unknown image" loading="lazy" />
+        <Image src={localbimeoImage} alt="unknown image" loading="lazy" />
+        <Image src={localBaoImage} alt="unknown image" loading="lazy" />
+      </div>
+    </div>
+  </View>
+  <View>
+    <div
+      class="h-auto w-full flex flex-col bg-[#30A777] rounded-2xl py-8 px-8 gap-y-8 md:flex-row md:py-12 md:px-12"
+    >
+      <div class="h-auto w-full flex flex-col gap-y-5 md:w-3/5 md:gap-y-8">
+        <p class="text-3xl font-bold text-white">
+          Besoin de nos services ? D’un renseignement ?
+        </p>
+        <p class="text-white">
+          Nos equipes serront ravis de ... Vestibulum a tempor enim. Aenean nec
+          felis augue. Duis laoreet fringilla enim, ac convallis neque laoreet
+          ut.
+        </p>
+        <CustomButton
+          className="bg-white text-[#30A777]"
+          text="Prendre contact"
+          link="#"
+        />
+      </div>
+      <div class="w-full h-auto flex justify-center md:w-2/5">
+        <Meet />
+      </div>
+    </div>
+  </View>
+  <View>
+    <FaqLanding />
+  </View>
+</Layout>

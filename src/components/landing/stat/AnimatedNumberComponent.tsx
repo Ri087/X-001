@@ -1,11 +1,5 @@
-import {
-  animate,
-  motion,
-  useMotionValue,
-  useMotionValueEvent,
-  useTransform,
-} from 'motion/react'
-import { useEffect, useState } from 'react'
+import { animate, motion, useMotionValue, useTransform } from 'motion/react'
+import { useEffect } from 'react'
 
 type AnimatedNumberProps = {
   number: number
@@ -14,7 +8,6 @@ type AnimatedNumberProps = {
 export const AnimatedNumberComponent = ({ number }: AnimatedNumberProps) => {
   const count = useMotionValue(0)
   const rounded = useTransform(() => Math.round(count.get()))
-  console.log(count)
   useEffect(() => {
     const controls = animate(count, number, { duration: 5 })
     return () => controls.stop()

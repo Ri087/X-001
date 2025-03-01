@@ -1,0 +1,14 @@
+---
+import Checked from '../../components/svg/Checked.astro'
+
+type CheckedTextProps = {
+  text: string
+}
+
+const { text } = Astro.props as CheckedTextProps
+---
+
+<div class="flex gap-x-1">
+  <Checked />
+  <p>{text}</p>
+</div>
