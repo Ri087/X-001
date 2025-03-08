@@ -1,29 +1,22 @@
 ---
-import SwapButtonMenu from '../../components/menu/SwapButtonMenu.astro'
+import EnergiaFullLogo from '../svg/EnergiaFullLogo.astro'
 import DesktopMenu from './../menu/DesktopMenu.astro'
 import MobileMenu from './../menu/MobileMenu.astro'
 ---
 
 <!-- Desktop menu -->
-<div
-  class="bg-white w-full h-[15vh] flex justify-center items-center md:h-[10vh]"
->
-  <div class="flex justify-between w-5/6 items-center">
-    <div>
-      <a href="#">
-        <img src="/images/energia-logo.png" alt="energia-logo" class="logo" />
-      </a>
-    </div>
-    <div class="hidden lg:flex">
-      <DesktopMenu />
-    </div>
-    <div class="lg:hidden">
-      <SwapButtonMenu />
+<div class="bg-white w-full h-auto flex justify-center">
+  <div class="w-full h-auto flex max-size px-8 py-4 md:py-6 md:px-16">
+    <div
+      class="w-full h-auto flex items-center justify-center lg:justify-between"
+    >
+      <EnergiaFullLogo />
+      <div class="hidden lg:flex">
+        <DesktopMenu />
+      </div>
+      <div class="flex lg:hidden">
+        <MobileMenu />
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Mobile menu -->
-<div class="bg-white w-full h-full hidden transition-all" id="burger-menu">
-  <MobileMenu />
 </div>

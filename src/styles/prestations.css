@@ -1,0 +1,6 @@
+.prestation-bg {
+  background: url('../assets/images/background-prestation.webp');
+  background-size: cover; /* L'image prend tout l'espace et garde ses proportions */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
