@@ -1,37 +1,27 @@
 ---
-import Image from 'astro/components/Image.astro'
 import RightArrow from '../svg/RightArrow.astro'
 import TreeXHome from '../svg/TreeXHome.astro'
 import CustomButton from '../utils/CustomButton.astro'
 import localPrestationSectionImage from '../../assets/images/presation-section.webp'
 import View from '../utils/View.astro'
+import ImageRowText from '../utils/ImageRowText.astro'
 ---
 
 <View>
-  <div class="w-full h-auto flex flex-col gap-y-5 md:flex-row">
-    <div class="flex w-full h-full md:w-1/2 md:justify-center md:pr-4">
-      <Image
-        src={localPrestationSectionImage}
-        alt={'Prestation section image'}
-        class="h-auto w-full object-cover rounded-2xl max-h-[420px]"
-      />
-    </div>
-    <div class="flex flex-col mt-5 gap-y-6 md:w-1/2 md:pl-4 md:justify-center">
-      <TreeXHome />
-      <p class="text-3xl font-bold">Nos services pour vous !</p>
-      <p class="text-[16px] max-w-[550px]">
-        Nos equipes travailles pour vous, venez decouvrire nos secteurs
-        d’activité ! Nosu sommes present sur les habitat individuel, collectif,
-        les immeubles tertiaires ainsi que les batiments institutionnels et
-        collectivités.
-      </p>
-      <CustomButton
-        text="Decouvrez nos prestations "
-        link="prestations"
-        className="primary"
-      >
-        <RightArrow />
-      </CustomButton>
-    </div>
-  </div>
+  <ImageRowText image={localPrestationSectionImage}>
+    <TreeXHome />
+    <p class="text-3xl font-bold">Nos services pour vous !</p>
+    <p class="text-[16px] max-w-[550px]">
+      Nos equipes travailles pour vous, venez decouvrire nos secteurs d’activité
+      ! Nosu sommes present sur les habitat individuel, collectif, les immeubles
+      tertiaires ainsi que les batiments institutionnels et collectivités.
+    </p>
+    <CustomButton
+      text="Decouvrez nos prestations "
+      link="prestations"
+      className="primary"
+    >
+      <RightArrow />
+    </CustomButton>
+  </ImageRowText>
 </View>
