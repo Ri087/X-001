@@ -1,0 +1,130 @@
+---
+import '@/styles/prestations.css'
+import RightArrow from '@/components/svg/RightArrow.astro'
+import CustomButton from '@/components/utils/CustomButton.astro'
+import View from '@/components/utils/View.astro'
+import Layout from '@/layouts/Layout.astro'
+import localPrestation1Image from '@/assets/images/presta1.webp'
+import CheckedText from '@/components/utils/CheckedText.astro'
+import ImageRowText from '@/components/utils/ImageRowText.astro'
+import House from '@/components/svg/House.astro'
+import FaqLanding from '@/components/landing/FaqLanding.astro'
+---
+
+<Layout>
+  <View bg="prestation-bg">
+    <div
+      class="h-auto w-full flex flex-col justify-center gap-y-5 md:max-w-[670px] md:gap-y-10"
+    >
+      <House />
+      <p
+        class="text-white text-[40px] font-extrabold md:text-5xl md:leading-16"
+      >
+        Nos services pour vous !
+      </p>
+      <p class="text-[var(--white-85)] text-md font-light md:text-xl">
+        Duis nec tincidunt tortor. Nulla viverra justo quis ligula tempus
+        cursus. Nulla sit amet interdum risus. Ut placerat semper odio, et
+        varius libero mollis vel. Mauris quis condimentum nulla.
+      </p>
+      <div class="h-auto w-full flex flex-col gap-y-3">
+        <CustomButton
+          text="Nos prestations"
+          link="a-propos"
+          className="primary"
+        >
+          <RightArrow />
+        </CustomButton>
+      </div>
+    </div>
+  </View>
+  <View>
+    <ImageRowText image={localPrestation1Image}>
+      <p class="text-3xl font-bold">Habitat individuel</p>
+      <p class="text-[16px] max-w-[550px]">
+        Nous vous accompagnons dans la transition energetique de votre
+        coopropriété. L'audit énergétique est une analyse complète des
+        performances....
+      </p>
+      <div class="w-full h-auto flex flex-wrap gap-3">
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+      </div>
+      <CustomButton
+        text="Decouvrez nos prestations "
+        link="prestations"
+        className="primary"
+      >
+        <RightArrow />
+      </CustomButton>
+    </ImageRowText>
+  </View>
+  <View bg="bg-[#F9f9f9]">
+    <ImageRowText image={localPrestation1Image} reversed="true">
+      <p class="text-3xl font-bold">Habitat individuel</p>
+      <p class="text-[16px] max-w-[550px]">
+        Nous vous accompagnons dans la transition energetique de votre
+        coopropriété. L'audit énergétique est une analyse complète des
+        performances....
+      </p>
+      <div class="w-full h-auto flex flex-wrap gap-3">
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+      </div>
+      <CustomButton
+        text="Decouvrez nos prestations "
+        link="prestations"
+        className="primary"
+      >
+        <RightArrow />
+      </CustomButton>
+    </ImageRowText>
+  </View>
+  <View>
+    <ImageRowText image={localPrestation1Image}>
+      <p class="text-3xl font-bold">Habitat individuel</p>
+      <p class="text-[16px] max-w-[550px]">
+        Nous vous accompagnons dans la transition energetique de votre
+        coopropriété. L'audit énergétique est une analyse complète des
+        performances....
+      </p>
+      <div class="w-full h-auto flex flex-wrap gap-3">
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+      </div>
+      <CustomButton
+        text="Decouvrez nos prestations "
+        link="prestations"
+        className="primary"
+      >
+        <RightArrow />
+      </CustomButton>
+    </ImageRowText>
+  </View>
+  <View bg="bg-[#F9f9f9]">
+    <ImageRowText image={localPrestation1Image} reversed="true">
+      <p class="text-3xl font-bold">Habitat individuel</p>
+      <p class="text-[16px] max-w-[550px]">
+        Nous vous accompagnons dans la transition energetique de votre
+        coopropriété. L'audit énergétique est une analyse complète des
+        performances....
+      </p>
+      <div class="w-full h-auto flex flex-wrap gap-3">
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+        <CheckedText text="DPE" />
+      </div>
+      <CustomButton
+        text="Decouvrez nos prestations "
+        link="prestations"
+        className="primary"
+      >
+        <RightArrow />
+      </CustomButton>
+    </ImageRowText>
+  </View>
+    <FaqLanding />
+</Layout>
